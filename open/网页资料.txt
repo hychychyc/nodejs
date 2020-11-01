@@ -1,0 +1,104 @@
+http://bugmenot.com/view/oracle.com   oracle密码
+https://blog.csdn.net/nyist327/article/details/45074559 mysql 
+https://blog.csdn.net/youchangrui/article/details/84497338?utm_medium=distribute.pc_relevant_download.none-task-blog-baidujs-1.nonecase&depth_1-utm_source=distribute.pc_relevant_download.none-task-blog-baidujs-1.nonecase
+mysql 授权
+https://www.cnblogs.com/WD-NewDemo/p/11141384.html
+mysql 初始化
+
+https://blog.csdn.net/qq33245909/article/details/100522732
+查表
+
+https://my.oschina.net/dkvirus/blog/1120354 npm教学，比较全
+
+node 路由404 错误
+https://hbiao68.blog.csdn.net/article/details/84866618?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.channel_param&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.channel_param
+not found https://blog.csdn.net/qq_38705449/article/details/103525565
+
+搭建nodejs 服务器
+https://www.jianshu.com/p/8de5d3d48507
+https://www.php.cn/js-tutorial-403065.html
+https://www.cnblogs.com/eczhou/p/7845529.html
+
+模块接口
+https://blog.csdn.net/xqnode/article/details/60610885
+
+删除mysql
+https://blog.csdn.net/qq_39701269/article/details/77935490
+
+node连接mysql
+https://www.cnblogs.com/yf-html/p/8733837.html
+https://www.cnblogs.com/MrZWJ/p/10279019.html
+https://www.cnblogs.com/mibear/p/nodejs.html?utm_source=tuicool&utm_medium=referral
+https://www.cnblogs.com/tinyphp/p/4934287.html
+https://my.oschina.net/u/4301418/blog/3343012
+https://www.cnblogs.com/hssds/p/11910636.html
+https://blog.csdn.net/qq_41915936/article/details/107857775
+https://blog.csdn.net/weixin_41564885/article/details/80296310
+https://blog.csdn.net/weixin_41564885/article/details/80296310
+https://www.cnblogs.com/wangyang0210/p/9784393.html
+菜鸟教程
+https://www.runoob.com/nodejs/nodejs-router.html
+
+html居中https://www.cnblogs.com/huangj/p/7903656.html
+
+背景图https://blog.csdn.net/blueblood1/article/details/82931272
+https://www.cnblogs.com/dreamsqin/p/7020164.html
+https://jingyan.baidu.com/article/fec4bce2ab03e9f2618d8b04.html
+
+跳转
+https://blog.csdn.net/kuangshp128/article/details/75212730
+https://blog.csdn.net/dd1095/article/details/102436321?utm_medium=distribute.pc_relevant.none-task-blog-title-1&spm=1001.2101.3001.4242
+https://blog.csdn.net/u014465934/article/details/82357055?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.channel_param&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.channel_param
+https://blog.csdn.net/chenshanqiang/article/details/103137313?utm_medium=distribute.pc_relevant.none-task-blog-title-2&spm=1001.2101.3001.4242
+https://blog.csdn.net/tongkaiming/article/details/79871481
+https://blog.csdn.net/pspxuan/article/details/101444172
+
+
+render渲染
+https://blog.csdn.net/fengtingyan/article/details/83026387
+
+req
+https://www.cnblogs.com/abdm-989/p/11930335.html
+https://blog.csdn.net/sunling112/article/details/79297454?utm_source=blogxgwz7
+
+js
+https://www.cnblogs.com/alex96/p/12146127.html
+
+iis
+https://blog.csdn.net/zhangxiao0122/article/details/80563557?depth_1-utm_source=distribute.pc_relevant_right.none-task&utm_source=distribute.pc_relevant_right.none-task
+https://blog.csdn.net/whc888666/article/details/97499029?utm_medium=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.add_param_isCf&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.add_param_isCf
+
+java
+https://blog.csdn.net/muwan2900/article/details/84298873
+
+selenium
+https://blog.csdn.net/H_12306/article/details/81110428
+https://www.jianshu.com/p/a1a64f649472
+https://www.cnblogs.com/klb561/p/8839141.html
+b站删动态
+https://gwliang.com/2020/03/12/bilibili-del-Luck-draw-dynamic
+https://www.jianshu.com/p/4f94930791f6
+
+getcontexpath没啥用
+https://www.cnblogs.com/yqskj/articles/2226401.html
+
+
+https://blog.csdn.net/wust_cyl/article/details/90745480
+
+input file
+https://blog.csdn.net/dear_mr/article/details/56040549
+
+边距
+https://www.jb51.net/css/154133.html
+
+获取input
+https://zhidao.baidu.com/question/811905811081223892.html
+
+隐藏组件
+https://blog.csdn.net/thinkingdaisy/article/details/53580629
+
+js读取文件内容下载
+https://www.awaimai.com/566.html
+https://www.jianshu.com/p/736503e7e073
+https://blog.csdn.net/weixin_30807779/article/details/96710676
+https://blog.csdn.net/weixin_33834910/article/details/88882716

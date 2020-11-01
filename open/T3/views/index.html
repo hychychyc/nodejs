@@ -1,0 +1,163 @@
+﻿<html>
+<head><meta charset="utf-8"><title>hyc 实例</title>
+    <span>
+    </span>
+    <style>
+
+        body {
+           
+            background:url("images/c.jpg")no-repeat center center fixed; 
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+
+        }
+        .submit1{
+            background:url(images/a.jpg);                
+        border-style:none;                
+        width:124px;                
+        height:35px;                
+        background-repeat:no-repeat;   
+      
+        FONT-FAMILY: 华文行楷;
+        }
+        .submit2{
+            background:url(images/b.jpg);                
+        border-style:none;                
+        width:124px;                
+        height:35px;                
+        background-repeat:no-repeat;   
+      
+        FONT-FAMILY: 华文行楷;
+        }
+    </style>
+    
+</head>
+
+<body background="images/c.jpg">
+    
+<div>
+    <h1 align="center" line-height="400px" vertical-align="center" style="color:#DC143C">
+        todolist
+    </h1>
+</div>
+   
+
+<div align="center">
+
+<button class="submit1" id="b1" value="未完成的事" align="center"   vertical-align="center" >未完成的事</button>
+<br><br>
+<button class="submit2" id="b2" value="已完成的事" align="center"   vertical-align="center" >已完成的事</button>
+<br><br>
+
+</div> 
+<div class="index" >
+    <input type="file" name="upload" id="upload" accept="text/plain"/>
+    <div class=table1 id="table1" align="center" tabindex="-1" role="listbox" >
+        <div class="data1_init" >一件事都没有哦<br>
+        不会吧不会吧，不会还有人在摸鱼吧
+        </div>
+    </div>
+    <div class=table2 id="table2" align="center" tabindex="0" role="listbox" style="display: none;" >
+        <div class="data1_init" >一件事都没有哦<br>
+        不会吧不会吧，不会还有人在摸鱼吧
+        </div>
+    </div>
+
+
+    <button name="add" id="add">
+    </button>
+    <div class=table3 id="table3" align="center" tabindex="0" role="listbox" style="display: none;">
+        <div>又双叒叕有新的任务了吗!?</div>
+       
+        <div>事件名称</div>
+        <input type="text" autocomplete="off" placeholder="请输入内容" class="table3-input__inner">
+        <div>事件内容</div>
+        <input type="text" autocomplete="off" placeholder="请输入内容" class="table3-input__inner">
+        <button id="b4"  align="center" style="width:70px;height:30px" >主人的任务罢了</button><br>
+        <button id="b3"  align="center" style="width:70px;height:30px" >返回</button><br>
+       
+    </div>
+</div>
+</body>
+<script type="text/javascript">
+    window.onload = function() {
+        /**
+         * 上传函数
+         * @param fileInput DOM对象
+         * @param callback 回调函数
+         */
+        var getFileContent = function (fileInput, callback) {
+            if (fileInput.files && fileInput.files.length > 0 && fileInput.files[0].size > 0) {
+                //下面这一句相当于JQuery的：var file =$("#upload").prop('files')[0];
+                var file = fileInput.files[0];
+                if (window.FileReader) {
+                    var reader = new FileReader();
+                    reader.onloadend = function (evt) {
+                        if (evt.target.readyState == FileReader.DONE) {
+                            callback(evt.target.result);
+                        }
+                    };
+                    // 包含中文内容用gbk编码
+                    reader.readAsText(file, 'utf-8');
+                }
+            }
+        };
+
+        /**
+         * upload内容变化时载入内容
+         */
+        document.getElementById('upload').onchange = function () {
+            var content = document.getElementById('table1');
+
+            getFileContent(this, function (str) {
+                var dataObj = JSON.parse(str);var ans="";
+                for(var i=0;i<dataObj.data1.length;i++){
+                var obj=dataObj.data1[i];ans+='<div class="data1_p">'+obj.title+'<br>'+obj.content+'<br>'+'</div>';
+                
+                } content.innerHTML=ans;
+            });
+        };
+    };
+</script>
+<script>
+    window.onclick = function(){
+        document.getElementById('b2').onclick = function () {
+            var content = document.getElementById('table1');
+                content.setAttribute("style","display: none");
+            
+            var content2 = document.getElementById('table2');
+                content2.setAttribute("style","");
+            
+        };
+        document.getElementById('b1').onclick = function () {
+            var content = document.getElementById('table2');
+                content.setAttribute("style","display: none");
+            
+            var content2 = document.getElementById('table1');
+                content2.setAttribute("style","");
+            
+        };
+        
+    }
+</script>
+<script>
+    window.onclick = function(){
+        document.getElementById('add').onclick = function () {
+            var content = document.getElementById('table3');
+                content.setAttribute("style","");
+        };
+        document.getElementById('b3').onclick = function () {
+            var content = document.getElementById('table3');
+                content.setAttribute("style","display: none");
+        };
+        document.getElementById('b4').onclick = function () {
+            var content = document.getElementById('table3');
+                content.setAttribute("style","display: none");
+        };
+    }
+   
+</script>
+<script></script>
+</html>

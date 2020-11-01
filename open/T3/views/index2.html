@@ -1,0 +1,481 @@
+<html>
+<head><meta charset="utf-8"><title>hyc 实例</title>
+    <script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+    <style>
+
+        body {
+           
+            background:url("images/c.jpg")no-repeat ; 
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            border: 5px solid #dedede;
+            margin-bottom :auto ;
+            margin-left :auto ;
+            margin-right :auto ;
+            margin-top :auto ;
+            padding:15px;
+            position: relative;
+        }
+        .submit1{
+            background:url(images/a.jpg);                
+        border-style:none;                
+        width:124px;                
+        height:35px;                
+        background-repeat:no-repeat;   
+        padding:15px; 
+        -moz-border-radius: 105px;       
+            -webkit-border-radius: 105px;   
+            border-radius:105px; 
+        FONT-FAMILY: 华文行楷;
+        float: left;
+        }
+        .submit2{
+            background:url(images/b.jpg);                
+        border-style:none;                
+        width:124px;              
+        height:35px;                
+        background-repeat:no-repeat;   
+        padding:15px; 
+        -moz-border-radius: 105px;       
+            -webkit-border-radius: 105px;   
+            border-radius:105px;  
+        FONT-FAMILY: 华文行楷;
+        float: right;
+        }
+        .BBBB{
+            background:url(images/f.jpg);
+            padding:15px; width:30px; height:20px;
+            border: 5px solid #dedede;
+            -moz-border-radius: 105px;       
+            -webkit-border-radius: 105px;   
+            border-radius:105px;     
+            FONT-FAMILY: 华文行楷; 
+            margin-bottom :auto ;
+            margin-left :auto ;
+            margin-right :auto ;
+            margin-top :auto ;      
+        }
+        .BBB{
+            background:url(images/e2.jpg);
+            padding:15px; width:30px; height:20px;
+            border: 5px solid #dedede;
+            -moz-border-radius: 105px;       
+            -webkit-border-radius: 105px;   
+            border-radius:105px;     
+            FONT-FAMILY: 华文行楷; 
+            margin-bottom :auto ;
+            margin-left :auto ;
+            margin-right :auto ;
+            margin-top :auto ;      
+        }
+        .BB{
+            padding:15px; width:30px; height:20px;
+            border: 5px solid #dedede;
+            -moz-border-radius: 55px;       
+            -webkit-border-radius: 55px;   
+            border-radius:55px;     
+            FONT-FAMILY: 华文行楷; 
+            margin-bottom :60px ;
+            margin-left :60px ;
+            margin-right :60px ;
+            margin-top :30px ;      
+        }
+        .data1_p{padding:15px;
+            height: 80px;
+            border: 2px solid #dedede;
+            margin-bottom :auto ;
+            margin-left :auto ;
+            margin-right :auto ;
+            margin-top :auto ;
+            FONT-FAMILY: 华文行楷;
+            
+        }
+        .data1_init{padding:15px;
+            
+            border: 2px solid #dedede;
+            margin-bottom :auto ;
+            margin-left :auto ;
+            margin-right :auto ;
+            margin-top :auto ;
+            FONT-FAMILY: 华文行楷;
+        }
+        .data2_p{padding:15px;
+            
+            border: 2px solid #dedede;
+            margin-bottom :auto ;
+            margin-left :auto ;
+            margin-right :auto ;
+            margin-top :auto ;
+            FONT-FAMILY: 华文行楷;
+        }
+        .data2_init{padding:15px;
+            
+            border: 2px solid #dedede;
+            margin-bottom :auto ;
+            margin-left :auto ;
+            margin-right :auto ;
+            margin-top :auto ;
+            FONT-FAMILY: 华文行楷;
+        }
+        .index{padding:15px;
+            
+            border: 5px solid #dedede;
+            margin-bottom :auto ;
+            margin-left :250px;
+            margin-right :250px;
+            margin-top :auto ;
+            FONT-FAMILY: 华文行楷;
+            
+        }
+        .b5{
+            padding:15px; width:30px; height:30px;
+            border: 5px solid #dedede;
+            -moz-border-radius: 105px;       
+            -webkit-border-radius: 105px;   
+            border-radius:105px;     
+            background:url("images/del2.jpg")no-repeat ; 
+           float: right;
+           position: relative;
+           
+        }
+        .b6{
+            padding:15px; width:30px; height:30px;
+            border: 5px solid #dedede;
+            -moz-border-radius: 105px;       
+            -webkit-border-radius: 105px;   
+            border-radius:105px;     
+            background:url("images/finish2.jpg") ; 
+            float: right;
+           
+        }
+        .img1{
+          
+            /*text-align: center;*/
+            padding:5px; width:20px; height:20px;
+            border: 5px solid #dedede;
+            -moz-border-radius: 105px;       
+            -webkit-border-radius: 105px;   
+            border-radius:105px; 
+            position: relative;    
+        }
+
+        #upload{
+            overflow: hidden;
+            right: 0;
+            top: 0;
+            opacity: 0;
+            position: absolute;
+        }
+        #table3{
+            width:400px; height:200px;
+            border: 5px solid #dedede;
+            position: absolute;   
+            top: 50%;   
+            left: 50%;   
+            -webkit-transform: translate(-50%, -50%);   
+            -moz-transform: translate(-50%, -50%);   
+            -ms-transform: translate(-50%, -50%);   
+            -o-transform: translate(-50%, -50%);   
+            transform: translate(-50%, -50%);   
+            margin-bottom :auto ;
+            margin-left :auto ;
+            margin-right :auto ;
+            margin-top :auto ;
+            background-color: rgba(194, 172, 172, 0.1);
+            FONT-FAMILY: 华文行楷;
+        }
+        .table3-input__inner{
+            width: 300px;
+            height: 30px;
+        }
+        #opt{
+            position: relative;
+            margin-bottom :auto ;
+            margin-left :auto ;
+            margin-right :auto ;
+            margin-top :auto ;  
+        }
+    </style>
+    
+</head>
+
+<body background="images/c.jpg">
+    
+<div>
+    <h1 align="center" line-height="400px" vertical-align="center" style="color:#DC143C">
+        今天又是忙碌的一天呢
+    </h1>
+</div>
+   
+
+<div id="opt" align="center" style="width: 400;height: 30;">
+<div>
+    <button class="submit1" id="b1" value="未完成的事" align="left"   vertical-align="center" >未完成的事</button>
+</div>
+<div>
+    <button class="submit2" id="b2" value="已完成的事" align="right"   vertical-align="center" >已完成的事</button>
+</div>
+
+</div> 
+<div class="img1">
+    <img src="images/p2.jpg" id="my-img">    
+    <input type="file" name="upload" id="upload" accept="text/plain"/>
+</div>
+<br>
+<div>
+    <input class="BBBB" name="download" id="download"/>
+</div>
+<br>
+<div>
+    <button class="BBB" name="add" id="add">
+    </button>
+</div>
+
+<div class="index" >
+   
+    <div class=table1 id="table1" align="left" tabindex="-1" role="listbox" >
+        <div class="data1_init" >一件事都没有哦<br>
+        不会吧不会吧，不会还有人在摸鱼吧
+        </div>
+    </div>
+    <div class=table2 id="table2" align="left" tabindex="0" role="listbox" style="display: none;" >
+        <div class="data2_init" >一件事都没有哦<br>
+        不会吧不会吧，不会还有人在摸鱼吧
+        </div>
+    </div>
+
+
+    
+    <div class=table3 id="table3" align="center" tabindex="0" role="listbox" style="display: none;">
+        <div>又双叒叕有新的任务了吗!?</div>
+       
+        <div>事件名称</div>
+        <input type="text" autocomplete="off" placeholder="请输入内容" class="table3-input__inner" id='in3_1'>
+        <div>事件内容</div>
+        <input type="text" autocomplete="off" placeholder="请输入内容" class="table3-input__inner" id='in3_2'>
+        <br>
+        <div align="right" style="float: right;">
+            <button class="BB" id="b4"  align="left" style="float:left;width:70px;height:30px" >提交</button><br>
+        </div>
+        <div align="left" style="float: left;">
+        <button class="BB" id="b3"  align="right" style="float: right;width:70px;height:30px" >返回</button><br>
+        </div>
+    </div>
+</div>
+
+    
+</body>
+<script type="text/javascript">
+    var dataObj={
+        "data1":[],
+        "data2":[]
+    };
+    
+    window.onload = function() {
+        /**
+         * 上传函数
+         * @param fileInput DOM对象
+         * @param callback 回调函数
+         */
+        var getFileContent = function (fileInput, callback) {
+            if (fileInput.files && fileInput.files.length > 0 && fileInput.files[0].size > 0) {
+                //下面这一句相当于JQuery的：var file =$("#upload").prop('files')[0];
+                var file = fileInput.files[0];
+                if (window.FileReader) {
+                    var reader = new FileReader();
+                    reader.onloadend = function (evt) {
+                        if (evt.target.readyState == FileReader.DONE) {
+                            callback(evt.target.result);
+                        }
+                    };
+                    // 包含中文内容用gbk编码
+                    reader.readAsText(file, 'utf-8');
+                }
+            }
+        };
+
+        /**
+         * upload内容变化时载入内容
+         */
+        document.getElementById('upload').onchange = function () {
+            var content = document.getElementById('table1');
+            var content2 = document.getElementById('table2');
+            getFileContent(this, function (str) {
+                dataObj = JSON.parse(str);
+                var ans="";
+                if(dataObj.data1.length){
+                    for(var i=0;i<dataObj.data1.length;i++){
+                    var obj=dataObj.data1[i];
+                    ans+='<div class="data1_p">'+'<div>'+obj.title+'</div>'+'<div>'+'<br>'+obj.content+'</div>'+'<button id="b5_'+i+'"'+'class="b5"  align="center"></button>'+'<button id="b6_'+i+'"'+'class="b6"  align="center"></button><br>'+'</div>';
+                
+                    } content.innerHTML=ans;
+                }
+                ans="";
+                if(dataObj.data2.length){
+                    for(var i=0;i<dataObj.data2.length;i++){
+                    var obj=dataObj.data2[i];
+                    ans+='<div class="data1_p">'+'<div>'+obj.title+'</div>'+'<div>'+'<br>'+obj.content+'<br>'+'</div>'+'</div>';
+                
+                    } content2.innerHTML=ans;
+                }
+            });
+        };
+    };
+    window.onclick = function(){
+        document.getElementById('b2').onclick = function () {
+            var content = document.getElementById('table1');
+                content.setAttribute("style","display: none");
+            var content = document.getElementById('table2');
+            if(dataObj.data2.length>0){var ans="";
+                for(var i=0;i<dataObj.data2.length;i++){
+                var obj=dataObj.data2[i];
+                ans+='<div class="data1_p">'+'<div>'+obj.title+'</div>'+'<div>'+'<br>'+obj.content+'<br>'+'</div>'+'</div>';
+                
+                } content.innerHTML=ans;
+            }
+            
+                content.setAttribute("style","");
+            
+        };
+        document.getElementById('b1').onclick = function () {
+            var content = document.getElementById('table2');
+                content.setAttribute("style","display: none");
+            
+            var content2 = document.getElementById('table1');
+                content2.setAttribute("style","");
+            
+        };
+        document.getElementById('add').onclick = function () {
+            var content = document.getElementById('table3');
+                content.setAttribute("style","");
+        };
+        document.getElementById('b3').onclick = function () {
+            var content = document.getElementById('table3');
+                content.setAttribute("style","display: none");
+        };
+        var ipt=document.getElementById('in3_1');
+        var ipt2=document.getElementById('in3_2');
+        var tmp=document.getElementById('table1');
+        
+        var tmp2;
+        if(dataObj.data1.length)tmp2=tmp.getElementsByTagName("div");
+        document.getElementById('b4').onclick = function () {
+            var content = document.getElementById('table3');
+                content.setAttribute("style","display: none");
+                if(ipt.value&&ipt2.value){
+                    if(dataObj.data1.length){
+                        if(tmp2[0].className=="data1_init"){
+                        tmp.innerHTML='<div class="data1_p">'+'<div>'+ipt.value+'</div>'+'<br>'+'<div>'+ipt2.value+'</div>'+'<button id="b5_'
+                        +dataObj.data1.length+ '"' +'class="b5"  align="right"></button>'+'<button id="b6_'+
+                        dataObj.data1.length+'"'+'class="b6"  align="right"></button><br>'+'</div>';
+                        var t={"title": ipt.value ,"content": ipt2.value};
+                        dataObj.data1.push(t);
+                        } else  {
+                        tmp.innerHTML=tmp.innerHTML+'<div class="data1_p">'+'<div>'+ipt.value+'</div>'+'<br>'+'<div>'+ipt2.value+'</div>'+'<button id="b5_'+dataObj.data1.length+'"'+'class="b5"  align="center"></button>'+'<button id="b6_'+dataObj.data1.length+'"'+'class="b6"  align="center"></button><br>'+'</div>';
+                        var t={"title": ipt.value ,"content": ipt2.value};
+                        dataObj.data1.push(t);
+                        }
+                    }
+                    else  {
+                        tmp.innerHTML='<div class="data1_p">'+'<div>'+ipt.value+'</div>'+'<br>'+'<div>'+ipt2.value+'<div>'+'<button id="b5_'+dataObj.data1.length+'"'+'class="b5"  align="center"></button>'+'<button id="b6_'+dataObj.data1.length+'"'+'class="b6"  align="center"></button><br>'+'</div>';
+                        var t={"title": ipt.value ,"content": ipt2.value};
+                        dataObj.data1.push(t);
+                    }
+                }else {
+                    alert("信息不全！");
+                }
+                
+                
+                ipt.value="";ipt2.value="";
+        };
+     
+    
+        
+        //console.log("new");
+        function ppp(j){
+                document.getElementById('b5_'+j).onclick = function () {
+                    //console.log(j);
+                     //dataObj.data1.splice(j,1);
+                     //t=j;
+                    var content4 = document.getElementById('table1');
+                    dataObj.data1.splice(j,1);
+                    alert("放弃是不好的!");
+                    //console.log(j);
+                   
+                    //console.log(dataObj.data1.length);
+                     
+                    var ans4="";//ans4+=j;
+                    //ans4+=dataObj.data1.length;
+                    for(var i=0;i<dataObj.data1.length;i++){
+                        var obj4=dataObj.data1[i];
+                        //console.log(obj4);
+                        ans4+='<div class="data1_p">'+'<div>'+obj4.title+'</div>'+'<br>'+'<div>'+obj4.content+'</div>'+'<button id="b5_'+i+'" class="b5"  align="center"></button>'+'<button id="b6_'+i+'"'+'class="b6"  align="center"></button><br>'+'</div>';
+                            
+                    } 
+                    if(dataObj.data1.length)
+                    content4.innerHTML=ans4;
+                    else 
+                    content4.innerHTML='<div class="data1_init" >一件事都没有哦<br>不会吧不会吧，不会还有人在摸鱼吧</div>';
+
+                };
+            }
+        for(var j=0;j<dataObj.data1.length;j++){
+                ppp(j);
+                //console.log(j);
+                
+                //console.log("   ");
+           
+
+        }
+        function pppp(j){
+                document.getElementById('b6_'+j).onclick = function () {
+                    //console.log(j);
+                     //dataObj.data1.splice(j,1);
+                     //t=j;
+                    var content4 = document.getElementById('table1');
+                    dataObj.data2.push(dataObj.data1[j]);
+                    dataObj.data1.splice(j,1);
+                    alert("完成了一件事, 好耶!!");
+                    //console.log(j);
+                    
+                    //console.log(dataObj.data1.length);
+                     
+                    var ans4="";//ans4+=j;
+                    //ans4+=dataObj.data1.length;
+                    for(var i=0;i<dataObj.data1.length;i++){
+                        var obj4=dataObj.data1[i];
+                        //console.log(obj4);
+                        ans4+='<div class="data1_p">'+'<div>'+obj4.title+'</div>'+'<br>'+'<div>'+obj4.content+'</div>'+'<button id="b5_'+i+'" class="b5"  align="center"></button>'+'<button id="b6_'+i+'"'+'class="b6"  align="center"></button><br>'+'</div>';
+                            
+                    } 
+                    if(dataObj.data1.length)
+                    content4.innerHTML=ans4;
+                    else 
+                    content4.innerHTML='<div class="data1_init" >一件事都没有哦<br>不会吧不会吧，不会还有人在摸鱼吧</div>';
+                };
+            }
+        for(var j=0;j<dataObj.data1.length;j++){
+                pppp(j);
+                //console.log(j);
+                
+                //console.log("   ");
+           
+
+        }
+        
+            
+    }
+    $('#download').click(function(){console.log("YES");
+            var datastr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(dataObj));
+            var downloadAnchorNode = document.createElement('a')
+            downloadAnchorNode.setAttribute("href", datastr);
+            downloadAnchorNode.setAttribute("download", 'record.txt')
+            downloadAnchorNode.click();
+            downloadAnchorNode.remove();
+    })
+</script>
+
+
+</html>
